@@ -1,30 +1,30 @@
 // World Count
-var spcch = 'Hello I am Md Sabbir Hassan Shuvo';
+var spcch = 'Hello I am Md sabbir Hassan Shuvo';
 var count = 0;
 for(var i = 0; i < spcch.length; i++){
     var char = spcch[i];
     if(char == 0){
-        count++
+        count++;
     }
 }
-count++
-console.log('Total Wold is:',count);
+count++;
+console.log('Total World Is:',count);
 
 // Revers Part Start
 function Revers(Str){
     var Revers = '';
-    for(var i = 0;i < Str.length; i++){
+    for(var i = 0; i < Str.length; i++){
         var char = Str[i];
         Revers = char + Revers;
     }
     return Revers;
 }
-var Reverstatment = 'Hello I am Md Sabbir Hassan Shuvo';
+var Reverstatment = 'Hello i am Md Sabbir Hassan Shuvo';
 var allRevers = Revers(Reverstatment);
 console.log(allRevers);
 
-// Array Max Part
-var marks = [10,4212,54,636,55,963,514,45,252,55,11,122];
+// Array Max Part Start
+var marks = [10,4212,54,636,55,963,514,45,252,55,11,1220];
 var max = [0];
 for(var i = 0; i < marks.length; i++){
     var element = marks[i];
@@ -32,21 +32,21 @@ for(var i = 0; i < marks.length; i++){
         max = element;
     }
 }
-console.log('Highest Number Is:',max);
+console.log('Highest Number is:', max);
 
-// Array Sum Part
+// Array Sum Part Start
 var mark = [10,4212,54,636,55,963,514,45,252,55,11,122];
 var sum = mark[0];
-for(var i = 0; i < mark.length; i++){
+for(var i = 0; i <mark.length; i++){
     var element = mark[i];
     sum = sum + element;
 }
-console.log('Total Number Is:',sum);
+console.log('Total Number is:',sum);
 
-// Array Sum Function
+// Array Sum Function 
 function ArraySum(mark){
     var sum = mark[0];
-    for(var i = 0; i < mark.length; i++){
+    for(var i = 0; i <mark.length; i++){
         var element = mark[i];
         sum = sum + element;
     }
@@ -54,10 +54,10 @@ function ArraySum(mark){
 }
 var mark = [10,4212,54,636,55,963,514,45,252,55,11,122];
 var allarraySum = ArraySum(mark);
-console.log('Total Number is:',allarraySum);
+console.log('Function Total Number is:',allarraySum);
 
-// Array Duplakate Part
-var marks = [10,4212,963,514,45,252,963,514,45,25254,636,55,963,514,45,252,55,11,122,552,212];
+// Array Duplakte Part
+var marks = [10,20,6,0,6,0,60,6,0,50,50,50,60,80,90,30,30];
 var Duplakate = [];
 for(var i = 0; i < marks.length; i++){
     var element = marks[i];
@@ -155,7 +155,7 @@ function Random (n){
 var allrandomf = Random(50);
 console.log(allrandomf);
 
-// Fibonacci  Part
+// Fibonacci Part Start
 var fibo = [0,1];
 for(var i = 2; i < 10; i++){
     fibo[i] = fibo[i-1] + fibo[i-2];
@@ -163,16 +163,16 @@ for(var i = 2; i < 10; i++){
 }
 console.log(fibo);
 
-// Fibo funtion Part
+// Fibonacci Function Part
 function Fibonaccifun(n){
     var fibo = [0,1];
     for(var i = 2; i < n; i++){
-    fibo[i] = fibo[i-1] + fibo[i-2];
-    //console.log(fibo[i],fibo[i-1],fibo[i-2]);
+        fibo[i] = fibo[i-1] + fibo[i-2];
+        // console.log(fibo[i],fibo[i-1],fibo[i-2]);
     }
     return fibo;
 }
-var allfibo = Fibonaccifun(40);
+var  allfibo = Fibonaccifun(40);
 console.log(allfibo);
 
 // Fibonacci Recursive Part
@@ -236,11 +236,11 @@ else{
     console.log('This is Not a Leep Year');
 }
 
-// Factorial Part Start
+// Factoriald Part Start
 var factorial = 1;
 for(var i = 1; i < 10; i++){
     factorial = factorial * i;
-    console.log(factorial);
+    console.log(factorial)
 }
 
 // Factorial While Loop
@@ -257,11 +257,11 @@ function facte(n){
     var factorial = 1;
     for(var i = 1; i < n; i++){
         factorial = factorial * i;
-        // console.log(factorial);
-    } 
+        // console.log(i,factorial)
+    }
     return factorial;
 }
-var allfacte = facte(20);
+var allfacte = facte(30);
 console.log(allfacte);
 
 //  Conditional Part Start

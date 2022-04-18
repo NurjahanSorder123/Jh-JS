@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom </title>
+    <style>
+        article{
+            border: 2px solid #f1000f;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .spcial h3 {}
+    </style>
 </head>
 <body>
     <main>
@@ -14,19 +23,19 @@
             <h2>hello js</h2>
 
             <!-- Article Part Start -->
-            <article>
+            <article class="spcial">
                 <h3>article1</h3>
                 <p class="author">Lorem ipsum dolor sit,</p>
                 <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
             </article>
-            <article>
+            <article class="spcial">
                 <h3>article2</h3>
-                <p class="author2">Lorem ipsum dolor sit,</p>
+                <p class="author">Lorem ipsum dolor sit,</p>
                 <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
             </article>
             <article>
                 <h3>article3</h3>
-                <p class="author3">Lorem ipsum dolor sit,</p>
+                <p class="author">Lorem ipsum dolor sit,</p>
                 <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
             </article>
             <!-- Article Part End -->
@@ -47,6 +56,27 @@
         first.style.marginLeft = '40px';
         first.style.paddingRight = '50px';
         first.style.fontFamily = 'Rubik Glitch';
+
+        // Class Item
+        var authors = document.getElementsByClassName('author');
+        for(var i = 0; i < authors.length; i++){
+            var element = authors[i];
+            element.style.backgroundColor = 'green';
+            element.style.color = 'white';
+            element.style.padding = '10px';
+            element.style.fontSize = '20px';
+        }
+
+        // Quearry Seloktor
+        var Quearry = document.querySelectorAll('.spcial h3');
+        for(var i = 0; i < Quearry.length; i++){
+            var element = Quearry[i];
+            element.style.backgroundColor = 'blue';
+            element.style.color = 'white';
+            element.style.padding = '10px';
+            element.style.fontSize = '20px';
+            element.style.width = '80px';
+        }
     </script>
 </body>
 </html>

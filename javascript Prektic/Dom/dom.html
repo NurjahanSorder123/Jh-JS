@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Event</title>
+    <style>
+         article{
+            border: 2px solid #f1000f;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -13,6 +21,23 @@
             <h4 id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat blanditiis ea cupiditate.</h4>
             <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ipsum minus magni, id dolorem fuga.</h5>
         </section>
+         <!-- Article Part Start -->
+         <article class="spcial">
+            <h3>article1</h3>
+            <p class="author">Lorem ipsum dolor sit,</p>
+            <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
+        </article>
+        <article class="spcial">
+            <h3>article2</h3>
+            <p class="author">Lorem ipsum dolor sit,</p>
+            <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
+        </article>
+        <article>
+            <h3>article3</h3>
+            <p class="author">Lorem ipsum dolor sit,</p>
+            <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
+        </article>
+        <!-- Article Part End -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
@@ -36,6 +61,16 @@
             secend.style.margin = '0px 125px';
             secend.style.textAlign ='center';
             secend.style.marginBottom = '40px';
+
+            // Class Item
+            var authors = document.getElementsByClassName('author');
+            for(var i = 0; i < authors.length; i++){
+                var element = authors[i];
+                element.style.backgroundColor = 'green';
+                element.style.color = 'white';
+                element.style.padding = '10px';
+                element.style.fontSize = '20px';
+            }
         </script>
     </main>
 </body>
