@@ -1,5 +1,5 @@
-// World Count
-var spcch = 'Hello I am Md sabbir Hassan Shuvo';
+// World Count 
+var spcch = 'Hello i md Sabbir Hassan Shuvo';
 var count = 0;
 for(var i = 0; i < spcch.length; i++){
     var char = spcch[i];
@@ -8,7 +8,7 @@ for(var i = 0; i < spcch.length; i++){
     }
 }
 count++;
-console.log('Total World Is:',count);
+console.log('Total Word Is:',count);
 
 // Revers Part Start
 function Revers(Str){
@@ -19,7 +19,7 @@ function Revers(Str){
     }
     return Revers;
 }
-var Reverstatment = 'Hello i am Md Sabbir Hassan Shuvo';
+var Reverstatment = 'Hello Js I am Md Sabbir Hassan Shuvo';
 var allRevers = Revers(Reverstatment);
 console.log(allRevers);
 
@@ -32,29 +32,30 @@ for(var i = 0; i < marks.length; i++){
         max = element;
     }
 }
-console.log('Highest Number is:', max);
+console.log('Highest Number is:',max);
 
 // Array Sum Part Start
-var mark = [10,4212,54,636,55,963,514,45,252,55,11,122];
-var sum = mark[0];
-for(var i = 0; i <mark.length; i++){
-    var element = mark[i];
+var marks = [10,4212,54,636,55,963,514,45,252,55,11,1220];
+var sum = marks[0];
+for(var i = 0; i < marks.length; i++){
+    var element = marks[i];
     sum = sum + element;
 }
-console.log('Total Number is:',sum);
+console.log('Total Number Is:',sum);
 
-// Array Sum Function 
-function ArraySum(mark){
-    var sum = mark[0];
-    for(var i = 0; i <mark.length; i++){
-        var element = mark[i];
+// Array Sum Funtion
+function ArraySum(marks){
+    var sum = marks[0];
+    for(var i = 0; i < marks.length; i++){
+        var element = marks[i];
         sum = sum + element;
     }
+    // console.log('Total Number Is:',sum);
     return sum;
 }
-var mark = [10,4212,54,636,55,963,514,45,252,55,11,122];
-var allarraySum = ArraySum(mark);
-console.log('Function Total Number is:',allarraySum);
+var marks = [10,4212,54,636,55,963,514,45,252,55,11,1220];
+var allarraySum = ArraySum(marks);
+console.log('Total Number is:',sum);
 
 // Array Duplakte Part
 var marks = [10,20,6,0,6,0,60,6,0,50,50,50,60,80,90,30,30];
@@ -66,18 +67,18 @@ for(var i = 0; i < marks.length; i++){
         Duplakate.push(element);
     }
 }
-console.log('All Duplakte Person:',Duplakate);
+console.log('All Duplakate Person is:', Duplakate);
 
 // Max Part Start
 var bussinesman = 7000;
 var minster = 9000;
-var socib = 8000;
+var socib = 1000;
 if(bussinesman > minster){
     if(bussinesman > socib){
         console.log('Bussinesman Is Bigger');
     }
     else{
-        console.log('Minster Is Bigger');
+        console.log('Minster Is bigger');
     }
 }
 else{
@@ -89,57 +90,57 @@ else{
     }
 }
 
-// Max Js Spcial
+// Max Js Spcial 
 var robi = 8999;
-var jebon = 9000;
-var aksh = 5000;
+var jebon = 90000;
+var aksh = 50000;
 var max = Math.max(robi,jebon,aksh);
 console.log('Highest Number Is:',max);
 
-// Min Js Spcial 
+// Min Js Spcial
 var bussinesman = 5000;
-var minster = 89999;
-var socib = 5999;
+var minster = 69009;
+var socib = 75547567;
 var min = Math.min(bussinesman,minster,socib);
-console.log('Dwon Number Is:',min);
+console.log('Lower Number Is:',min);
 
 // Swap Part Start
-var a = 4000;
-var b = 7000;
+var a = 40000;
+var b = 60000;
 console.log('after swap: a=',a, 'b=',b);
 var temp = a;
 a = b;
 temp = b;
 console.log('before swap: a=',a, 'b=',b);
 
-// Swap Js Spcial 
+// Swap Js Spcial
 var raju = 4000;
-var korim = 6000;
-[raju,korim] = [korim,raju];
-console.log('after swap: raju=',raju, 'korim=',korim);
+var robi = 6967908;
+[raju,robi] = [robi,raju];
+console.log('after swap raju=',raju, 'robi=',robi);
 
 // Random Part Start
-var number = 490.899080878;
+var number = 450.87784567845;
 var result = Math.floor(number);
 console.log(result);
 
-var number = 490.899080878;
+var number = 450.87784567845;
 var result = Math.ceil(number);
 console.log(result);
 
-var number = 490.899080878;
+var number = 450.87784567845;
 var result = Math.round(number);
 console.log(result);
 
-var number = 490.899080878;
-var random = Math.random() *1000;
+var number = 450.87784567845;
+var random = Math.random() * 10000;
 var result = Math.round(random);
 console.log(result);
 
 // Random For Loop
-for(var i = 0; i < 10; i++){
-    var number = 490.899080878;
-    var random = Math.random() *1000;
+for(var i = 0; i < 5; i++){
+    var number = 450.87784567845;
+    var random = Math.random() * 10000;
     var result = Math.round(random);
     console.log(result);
 }
@@ -159,20 +160,20 @@ console.log(allrandomf);
 var fibo = [0,1];
 for(var i = 2; i <= 10; i++){
     fibo[i] = fibo[i-1] + fibo[i-2];
-    // console.log(fibo[i],fibo[i-1],fibo[i-2]);
+    // console.log(i,fibo[i],fibo[i-1],fibo[i-2]);
 }
 console.log(fibo);
 
 // Fibonacci Function Part
 function Fibonaccifun(n){
     var fibo = [0,1];
-    for(var i = 2; i < n; i++){
+    for(var i = 2; i <= n; i++){
         fibo[i] = fibo[i-1] + fibo[i-2];
-        // console.log(fibo[i],fibo[i-1],fibo[i-2]);
+        // console.log(i,fibo[i],fibo[i-1],fibo[i-2]);
     }
-    return fibo;
+    return fibo
 }
-var  allfibo = Fibonaccifun(40);
+var allfibo = Fibonaccifun(40);
 console.log(allfibo);
 
 // Fibonacci Recursive Part

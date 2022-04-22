@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2</title>
+    <style>
+        article{
+            border: 2px solid #f1000f;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus.</h1>
+            <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nesciunt soluta nostrum id! Distinctio officiis quasi voluptatem repudiandae commodi est molestias atque repellat corporis architecto.</p>
+            <h2>Hello Js</h2>
+            <!-- Article Part Start -->
+            <article class="spcial">
+                <h3>article1</h3>
+                <p class="author">Lorem ipsum dolor sit,</p>
+                <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
+            </article>
+            <article class="spcial">
+                <h3>article2</h3>
+                <p class="author">Lorem ipsum dolor sit,</p>
+                <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
+            </article>
+            <article>
+                <h3>article3</h3>
+                <p class="author">Lorem ipsum dolor sit,</p>
+                <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem temporibus sed consectetur praesentium, a possimus amet nemo quam eaque!</p>
+            </article>
+            <!-- Article Part End -->
+        </section>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+        <script>
+            console.log(document);
+            document.getElementsByTagName('main');
+            var first = document.getElementById('first');
+            first.style.color = 'green';
+            first.style.backgroundColor = 'Black';
+            first.style.fontSize = '40px';
+            first.style.textAlign = 'center';
+            first.style.padding = '10px';
+            first.style.fontFamily = 'Rubik Glitch';
+
+            // Class Item
+            var author = document.getElementsByClassName('author');
+            for(var i = 0; i < author.length; i++){
+                var element = author[i];
+                element.style.backgroundColor = 'blue';
+                element.style.color = 'white';
+                element.style.padding = '10px';
+                element.style.fontSize = '20px';
+                element.style.textAlign = 'center';
+                element.style.fontFamily = 'Rubik Glitch';
+            }
+            // Quearry Seloktor
+            var Quearry = document.querySelectorAll('.spcial h3');
+            for(var i = 0; i < Quearry.length; i++){
+                var element = Quearry[i];
+                element.style.backgroundColor = 'green';
+                element.style.color = 'white';
+                element.style.padding = '10px';
+                element.style.fontSize = '20px';
+                element.style.width = '80px';
+            }
+        </script>
+    </main>
+</body>
+</html>
